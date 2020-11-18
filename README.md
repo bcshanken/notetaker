@@ -15,14 +15,14 @@ To install the application fork the repo and install on your local machine. Then
 In your terminal navigate to the proper workplace. Run node on the app.js file and answer the prompts. An HTML file will be generated for you. See the video below for clarity. 
 
 <a href="https://www.youtube.com/watch?v=zpe5Xqi0vQo&feature=youtu.be
-" target="_blank"><img src="https://github.com/bcshanken/employeeManagment/blob/main/img/Capture.JPG?raw=true)" 
+" target="_blank"><img src="https://github.com/bcshanken/notetaker/blob/main/imgs/videoImg.JPG?raw=true)" 
 alt="video image" /></a>
 
 
 
 ## Credits
 
-The application uses both fs and inquirer. 
+The application uses express, node, and jquery. 
 
 ## License
 Copyright (c). All rights reserved.
