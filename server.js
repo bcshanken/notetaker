@@ -48,6 +48,18 @@ app.post("/api/notes", function (req, res) {
     res.json(storedNotes);
   });
 
+  app.delete("/api/notes/:id", function (req, res) {
+    storedNotes = fs.readFileSync("./db/db.json");
+    storedNotes = JSON.parse(storedNotes);
+    storedNotes = storedNotes.filter(function (note) {
+      return note.id != req.params.id;
+    });
+    storedNotes = JSON.stringify(storedNotes);
+    fs.writeFileSync("./db/db.json", storedNotes);
+    storedNotes = JSON.parse(storedNotes);
+    res.send(storedNotes);
+  });
+
 
 // get the server going
 app.listen(PORT, () => {
